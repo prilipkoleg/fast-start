@@ -1,0 +1,24 @@
+{
+  "name": "Fast_Start",
+  "authors": [
+    "Oleg Prilipko <prilipkoleg@gmail.com>"
+  ],
+  "description": "Fast start html/css/js pages.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "public",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.6.0",
+    "font-awesome": "^4.7.0"
+  }
+}

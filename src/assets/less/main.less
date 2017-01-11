@@ -1,0 +1,125 @@
+@import "fonts";
+@import "mixins";
+
+*,
+a:hover, button:hover,
+a:visited, button:visited,
+a:active, button:active,
+a:focus, button:focus
+{
+  outline: none;
+}
+
+a,button,input {
+  .transition( all .5s);
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover{
+  outline: none;
+  background: none;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal {
+  textarea {
+    max-width: 100%;
+    max-height: 150px;
+  }
+}
+
+button.slick-go-next,
+button.slick-go-prev{
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 1;
+  .transform(translate(0, -50%));
+}
+button.slick-go-next{right: -25px;}
+button.slick-go-prev{left: -25px}
+
+
+body, html {}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .md-no-padding {
+    padding: 0;
+  }
+
+  .md-no-padding-right {
+    padding-right: 0;
+  }
+
+  .md-no-padding-left {
+    padding-left: 0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/*==========  Non-Mobile  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+    min-height: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+/*@media only screen and (max-width : 320px) {*/
+@media only screen and (max-width: 320px) {
+}
