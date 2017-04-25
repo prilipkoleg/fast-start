@@ -5,8 +5,8 @@ var App = function () {
     };
 
     this.scrollToEl = function (el, offset, duration) {
-        el = ( !el instanceof jQuery ) ? $(el) : el;
-        el = el || $('body');
+        var $el = !( el instanceof jQuery ) ? $(el) : el;
+        el = $el.length ? $el : $('body');
         offset = offset || -120;
         duration = duration || 1000;
         $('html, body').stop().animate({
